@@ -1,0 +1,12 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import Nav from "./nav.js";
+
+const body = ReactDOM.createRoot(document.getElementById("body"));
+body.render(
+    <>
+        <Nav />
+        <p>Hi</p>
+    </>
+);

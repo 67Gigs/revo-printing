@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Duffish&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Bungee&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="Style/index.css">
+    <title>Sign Up | Revo Printing</title>
+    <script>
+        const images = ["1", "2", "3"];
+        let i = 0;
+        const changeImagePlus = () => {
+            i++;
+            if (i == images.length) {
+                i = 0;
+            }
+            document.getElementById("img").src = `../up-list/image${images[i]}.png`;
+        };
+        const changeImageMinus = () => {
+            i--;
+            if (i < 0) {
+                i = images.length - 1;
+            }
+            document.getElementById("img").src = `../up-list/image${images[i]}.png`;
+        };
+    </script>
+</head>
+<body>
+    <div class="image">
+        <img class="img" id="img" alt="Image" src="../up-list/image1.png" />
+    </div>
+    <a href="/" class="logo-container">
+        <div class="logo-overlay new">
+            <div class="overlap">
+                <img src="../pics/g-956.png" alt="logo" class="logo-img small">
+            </div>
+            <div class="logo smaller">
+                REVO <br>Printing
+            </div>
+        </div>
+    </a>
+    <div class="body">
+        <div class="left-section">
+
+            <div class="button-left">
+                <button class="change-image" id="minus" onclick="changeImageMinus()">
+                    <img src="../pics/greater-than-symbol.png" alt="">
+                </button>
+            </div>
+
+            <div class="middle-part">
+                <a href="/sign-in/" class="sign-in-container">
+                    <img src="flash-circle.png" alt="flash">
+                    <div class="sign-in-text">Sign in easly</div>
+                </a>
+
+                <div class="box">
+                    <div class="mask-group">
+                        <div class="overlap-group">
+                            <div class="overlape">
+                                <img class="microscope" alt="Microscope" src="microscope.png">
+                            </div>
+                            <p class="text-wrapper">Bring 3D printing to the new level</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-right">
+                <button class="change-image rotate" id="plus" onclick="changeImagePlus()">
+                    <img src="../pics/greater-than-symbol.png" alt="">
+                </button>
+            </div>
+
+        </div>
+        <div class="right-section">
+            <div id="change">
+                have an account? <a href="/sign-in/" id="link-to-sign"> Sign in!</a>
+            </div>
+            <div class="centering">
+                <p id="big-title">
+                    Get Started With Revo Printing <br> 
+                    <span id="small-title">Getting started is easy</span>
+                </p>
+                
+                <div class="sign-links">
+                    <button class="connect-button" id="google">
+                        <img src="google.png" alt="google">
+                        <div>Google</div>
+                    </button>
+                    <button class="connect-button" id="facebook">
+                        <img src="facebook.png" alt="facebook">
+                        <div>Facebook</div>
+                    </button>
+                </div>
+                <div class="sign-links">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="130" height="1" viewBox="0 0 130 1" fill="none">
+                        <path d="M0 0.5H130" stroke="#DBDBDB"/>
+                    </svg>
+                    <div>Or continue with </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="130" height="1" viewBox="0 0 130 1" fill="none">
+                        <path d="M0 0.5H130" stroke="#DBDBDB"/>
+                    </svg>
+                </div>
+                <div class="connect-form">
+                    <input type="text" id="full-name" placeholder="Full Name" class="form-input">
+                    <input type="text" id="email" placeholder="Enter Email" class="form-input">
+                    <input type="password" id="password" placeholder="Password" class="form-input">
+                    <input type="password" id="confirm-password" placeholder="Confirm Password" class="form-input">
+                    <button id="send">Create Account</button>
+                </div>
+                <div class="terms">
+                    By continuing you indicate that you read and agreed to the <a href="/terms">Terms</a> of Use
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+@font-face{
+    font-family: "Duffish";
+    src: url(".//Font/Duffish.ttf") format("truetype");
+}
+
+li {
+    list-style: none;
+    font-size: 16px;
+    font-family: Inter, roboto;
+    font-weight: 400;
+    text-transform: capitalize;
+    word-wrap: break-word;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    height: 80px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 18px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    
+}
+
+.logo-overlay {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(
+        180deg,
+        rgb(0, 0, 0) 0%,
+        rgb(249, 255, 161) 0.01%,
+        rgb(255, 240, 96) 13.02%,
+        rgb(242, 219, 0) 42.71%,
+        rgb(240, 194, 0) 82.29%,
+        rgb(231, 163, 0) 100%
+    );
+    background-clip: text;
+    color: transparent;
+    font-family: "Bungee";
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 50px;
+    -webkit-text-fill-color: transparent;
+    margin-left: 20px;
+    margin-top: 3px;
+}
+
+.logo-img{
+    margin: 0;
+    padding: 0;
+    background-image: url('../pics/g-934.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+} 
+
+.overlap {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.small {
+    width: 26px;
+    height: 60px;
+}
+
+.smaller {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.text {
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    font-family: Inter, roboto;
+    font-weight: 400;
+    text-transform: capitalize;
+    word-wrap: break-word
+}
+
+.rotate {
+    height: 12px;
+    width: 12px;
+    filter: invert(1);
+}

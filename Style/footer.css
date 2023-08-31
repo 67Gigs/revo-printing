@@ -1,0 +1,94 @@
+@font-face{
+    font-family: "Duffish";
+    src: url("../Font/Duffish.ttf") format("truetype");
+}
+  
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--gray-900, #1D2939);
+}
+
+.footer-foot {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--gray-400, #98A2B3);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 48px 0;
+    background-color: var(--gray-900, #101828);;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+.small {
+    width: 26px;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.smaller {
+    font-family: Bungee;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.logo-pol {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    padding-bottom: 100px;
+    justify-content: space-around;
+}
+
+.new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.under-text, .upper-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--gray-200, #EAECF0);
+    margin-top: 30px;
+    line-height: 40px;
+}
+
+.upper-text {
+    color: var(--gray-400, #98A2B3);
+
+}
+
+.labels {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.label {
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+}

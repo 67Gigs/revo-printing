@@ -1,0 +1,100 @@
+@font-face{
+    font-family: "Duffish";
+    src: url("../Font/Duffish.ttf") format("truetype");
+}
+
+nav {
+    display: flex;
+    margin-top: 31px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+    padding-right: 69px;
+}
+
+.logo-img{
+    margin: 0;
+    padding: 0;
+    background-image: url('../pics/g-934.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    
+} 
+
+
+.overlap {
+    display: flex;
+}
+
+.logo-overlay {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(
+        180deg,
+        rgb(0, 0, 0) 0%,
+        rgb(249, 255, 161) 0.01%,
+        rgb(255, 240, 96) 13.02%,
+        rgb(242, 219, 0) 42.71%,
+        rgb(240, 194, 0) 82.29%,
+        rgb(231, 163, 0) 100%
+    );
+    background-clip: text;
+    color: transparent;
+    font-family: "Bungee";
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 50px;
+    -webkit-text-fill-color: transparent;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    margin-top: 35px;
+    gap: 73px;
+}
+
+.links {
+    color: #ffffff;
+    font-family: "Poppins", Helvetica;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    min-width: max-content;
+}
+
+
+@media screen and (max-width : 1150px) {
+    .image-container {
+        width: 0%;
+        height: 0%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation {
+        width: 0px;
+    }
+
+    .links {
+        min-width: none;
+        width: 0;
+        font-size: 0;
+    }
+}
